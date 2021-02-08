@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Array.forEach()</h2>
+
+<p>Calls a function once for each array element.</p>
+
+<p id="demo"></p>
+
+<script>
+var txt = "";
+var max=0;
+var numbers = [45, 4, 9, 16, 25];
+numbers.forEach(myFunction);
+
+
+function myFunction(value, index, array) {
+        if(value%2==0)
+        { document.write(value+"<br>");
+        }
+        else 
+        document.write("not even<br> ");
+}
+var num=numbers.map(myFun);
+document.write(max);
+function myFun(value)
+{ if(max<value)
+{ max=value;
+}
+
+}
+var even = numbers.filter(myfun);
+var odd= numbers.filter(myod);
+document.write("<br>even: "+even);
+document.write("<br>odd: "+odd);
+function myfun(value)
+{   if(value%2==0)
+      return value;
+}
+function myod(value)
+{ if(value%2!=0)
+    return value;
+}
+</script>
+
+</body>
+</html>
