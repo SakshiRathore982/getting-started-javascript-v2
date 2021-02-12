@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Array.every()</h2>
+
+<p>The every() method checks if all array values pass a test.</p>
+
+<p id="demo"></p>
+
+<script>
+var numbers = [42, 40, 10, 26];
+var fruits=["cmxk","sak","sas"];
+var allOver18 = numbers.every(myFunction);
+var position=fruits.indexOf("sas");
+document.write(position+1+"<br>");
+position=numbers.indexOf(10);
+document.write( "All over 18 is " + allOver18);
+document.write(numbers+"<br>position of 10 is :">+position);
+function myFunction(value) {
+  return value%2==0 ;
+}
+</script>
+
+</body>
+</html>
