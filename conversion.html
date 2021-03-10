@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <h1>java scripts pratice </h1>
+    <img id="pic" src="jeep2.jpg" width="500" height="400" />
+    <button type="button" onclick="display()">click me</button>
+    <button type="button1" onclick="content()">feature</button>
+    <p id="con"></p>
+    <p id="demo"></p>
+    <script>
+        function content() {
+            var fea = "The Jeep Wrangler has 1 Petrol Engine on offer.The Petrol engine is 1998 cc.It is available with the Automatic transmission.Depending upon the variant and fuel type the Wrangler has a mileage of 12.1 kmpl.The Wrangler is a 5 seater and has length of 4882mm, width of 1894mm and a wheelbase of 3008mm. ";
+            document.getElementById("con").innerHTML = fea;
+        }
+    </script>
+    <script>
+
+        function display() {
+            var im = "jeep.jpg";
+
+            document.getElementById("pic").src = im.replace();
+        }
+        var fruits = ["apple", "mango", "orange"];
+        document.getElementById("demo").innerHTML = isArray(fruits);
+        function isArray(arr) {
+            return arr.constructor.toString().indexOf("Array") > -1;
+        }
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
